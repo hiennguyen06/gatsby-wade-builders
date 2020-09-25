@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap');
 
+
+// VARIABLES
+$color-dark: #000;
+$color-light: #fff;
+$color-grey: #fff;
+
 * {
     margin: 0;
     padding: 0;
@@ -34,4 +40,12 @@ li {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.page-links {
+    font-size: 4rem;
+}
+
+.styleClassNav {
+    color: red;
 }
