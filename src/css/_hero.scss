@@ -1,0 +1,45 @@
+.section-hero {
+    margin-top: 22rem;
+    
+    .hero-text {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 8rem;
+
+        @media only screen and (max-width: 768px) {
+            display: block;
+            margin-bottom: 4rem;
+        }
+
+        h1 {
+            font-size: 5.6rem;
+            line-height: 1.2;
+            width: 400px;
+
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 8rem;
+            }
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
+    }
+
+    .hero-img {
+        display: block;
+    }
+
+    .hero-sub {
+        width: 50%;
+        margin: 8rem 0;
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
+        
+        p {
+            margin-bottom: 4rem;
+        }
+    }
+}

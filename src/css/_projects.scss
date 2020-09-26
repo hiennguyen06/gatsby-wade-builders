@@ -1,0 +1,12 @@
+.section-projects {
+    height: 50vh;
+    background-color: $color-grey;
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 32rem;
+        grid-gap: 6rem;
+        padding: 8rem 0;
+    }
+}

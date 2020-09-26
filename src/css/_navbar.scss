@@ -1,0 +1,47 @@
+.navbar {
+    width: 100%;
+    margin-top: 4rem;
+    padding: 2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    background: transparent;
+
+    .nav-container {
+        padding: 0 6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media only screen and (max-width: 768px) {
+            padding: 2.8rem;
+        }
+
+        .nav-left {
+            flex-basis: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media only screen and (max-width: 768px) {
+                flex-basis: 100%;
+            }
+            
+        }
+
+        .nav-right {
+            flex-basis: 50%;
+
+            @media only screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+
+    }
+}
+
+.navbar-active {
+    background: $color-dark;
+    color: $color-light;
+    transition: all 0.3s;
+}
