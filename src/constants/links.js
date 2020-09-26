@@ -19,25 +19,8 @@ const data = [
     }
 ]
 
-// const tempLinks = data.map((link) => {
-//     return (
-//         <li key={link.id}>
-//             <Link 
-//                 to={link.url}>{link.text}
-//             </Link>
-//         </li>
-//     )
-// })
-
-// export default ( {styleClass} ) => {
-//     return (
-//         <ul className={`page-links ${styleClass ? styleClass : ''}`}>
-//             {tempLinks}
-//         </ul>
-//     )
-// }
-
-const NavLinks = ( {styleClass}) => {
+// styleClass is a prop that we will pass to the navbar to additional style
+const NavLinks = ( {styleClass} ) => {
     return (
         <ul className={`page-links ${styleClass ? styleClass : ''}`}>
             {data.map((link) => {
