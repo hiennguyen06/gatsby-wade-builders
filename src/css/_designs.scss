@@ -1,0 +1,37 @@
+.section-designs {
+    height: auto;
+    background-color: $color-grey;
+    padding-bottom: 8rem;
+
+    .design-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 6rem;
+        padding: 8rem 0;
+
+        .design-item {
+
+            .design-info {
+                margin-top: 2rem;
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                grid-gap: 8px;
+
+                .item-tags {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+.section-work-page {
+    .work-desc{
+        width: 50%;
+        margin-bottom: 8rem;
+
+        @media only screen and (max-width: 768px) {
+            width: 75%;
+        }
+    }
+}

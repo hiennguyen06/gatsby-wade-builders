@@ -2,6 +2,7 @@ import { doc } from 'prettier'
 import React, { useState } from 'react'
 import { FaAlignRight } from "react-icons/fa"
 import NavLinks from '../constants/links'
+import { Link } from "gatsby"
 
 const Navbar = ( {styleClass} ) => {
 
@@ -21,9 +22,11 @@ const Navbar = ( {styleClass} ) => {
         <nav className={navbar ? 'navbar navbar-active' : 'navbar'}>
             <div className="nav-container">
                 <div className="nav-left">
-                    <h1 className="logo">Wade<span>&trade;</span></h1>
+                    <Link to="/">
+                        <h1 className="logo">Wade<span>&trade;</span></h1>
+                    </Link>
                     <button type="button" className="toggle-btn">
-                        <FaAlignRight></FaAlignRight>
+                        <FaAlignRight className={navbar ? 'toggle-btn-light' : 'toggle-btn'}></FaAlignRight>
                     </button>
                 </div>
                 <div className="nav-right">
