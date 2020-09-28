@@ -7,7 +7,7 @@
     }
      .testimonial-section-center{
          h3 {
-            margin-bottom: 8rem;
+            margin-bottom: 6rem;
          }
 
          display: flex;
@@ -17,8 +17,8 @@
 
          .testimonial-info {
              width: 75%;
-             height: 120px;
-             margin-bottom: 8rem;
+             height: 100px;
+             margin-bottom: 6rem;
              text-align: center;
 
             
@@ -53,5 +53,9 @@
             }
          }
 
+     }
+
+     .testimonial-img {
+         padding: 0;
      }
 }

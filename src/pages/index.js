@@ -6,8 +6,8 @@ import Layout from "../components/layout"
 import Hero from "../components/hero"
 import Designs from "../components/designs"
 import Testimonial from "../components/testimonial"
-import Navbar from '../components/navbar'
-import Image from "../components/image"
+import Contact from '../components/contact'
+import Image from "gatsby-image"
 
 import '../constants/links'
 
@@ -23,6 +23,7 @@ const IndexPage = ({data}) => {
       <Hero />
       <Designs designs={designs} />
       <Testimonial />
+      <Contact />
     </Layout>
   )
 }
