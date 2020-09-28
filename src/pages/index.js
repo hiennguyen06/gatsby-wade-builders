@@ -10,6 +10,7 @@ import Contact from '../components/contact'
 import Image from "gatsby-image"
 
 import '../constants/links'
+import '../constants/social-links'
 
 import SEO from "../components/seo"
 

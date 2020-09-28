@@ -9,12 +9,14 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Navbar from "./navbar"
+import Footer from "./footer"
 
 const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
       {children}
+      <Footer />
     </>
   )
 }
