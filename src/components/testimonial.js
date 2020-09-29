@@ -27,7 +27,6 @@ const query = graphql`
 
 const Testimonial = () => {
     const data = useStaticQuery(query)
-    console.log(data)
     const {allStrapiTestimonials: {nodes: testimonial}} = data
 
     const {

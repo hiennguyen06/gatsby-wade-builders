@@ -37,7 +37,7 @@ module.exports = {
         //   singleType : `about`
         //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
         contentTypes: [],
-        singleTypes: [ `hero`, `designs`, `testimonials`],
+        singleTypes: [ `hero`, `designs`, `testimonials`, `about`],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

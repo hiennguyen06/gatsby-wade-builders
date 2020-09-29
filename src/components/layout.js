@@ -10,12 +10,14 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Navbar from "./navbar"
 import Footer from "./footer"
+import Contact from "./contact"
 
 const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
       {children}
+      <Contact />
       <Footer />
     </>
   )
