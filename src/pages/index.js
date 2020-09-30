@@ -24,7 +24,6 @@ const IndexPage = ({data}) => {
       <Hero />
       <Designs designs={designs} />
       <Testimonial />
-      <Contact />
     </Layout>
   )
 }

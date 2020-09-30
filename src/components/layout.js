@@ -5,19 +5,28 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
+import React, {useState} from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Navbar from "./navbar"
 import Footer from "./footer"
-import Contact from "./contact"
+import Sidebar from "./sidebar"
 
 const Layout = ({ children }) => {
+
+  const [openSidebar, setOpensidebar] = useState(false)
+
+  const handleToggle = () => {
+    setOpensidebar(!openSidebar);
+  }
+
+  console.log(openSidebar);
+
   return (
     <>
-      <Navbar />
+      <Navbar handleToggle={handleToggle} />
+      <Sidebar openSidebar={openSidebar} handleToggle={handleToggle} />
       {children}
-      <Contact />
       <Footer />
     </>
   )

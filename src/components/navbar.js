@@ -4,7 +4,7 @@ import { FaAlignRight } from "react-icons/fa"
 import NavLinks from '../constants/links'
 import { Link } from "gatsby"
 
-const Navbar = ( {styleClass} ) => {
+const Navbar = ( {styleClass, handleToggle} ) => {
 
     const [navbar, setNavbar] = useState(false)
  
@@ -25,7 +25,7 @@ const Navbar = ( {styleClass} ) => {
                     <Link to="/">
                         <h1 className="logo">Wade<span>&trade;</span></h1>
                     </Link>
-                    <button type="button" className="toggle-btn">
+                    <button type="button" className="toggle-btn" onClick={handleToggle}>
                         <FaAlignRight className={navbar ? 'toggle-btn-light' : 'toggle-btn'}></FaAlignRight>
                     </button>
                 </div>

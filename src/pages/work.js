@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Designs from "../components/designs"
 import Heading from '../components/heading'
+import Contact from '../components/contact'
+
 
 const Work = ({data: {allStrapiDesigns: {nodes: designs}}}, {title}) => {
 
@@ -16,6 +18,7 @@ const Work = ({data: {allStrapiDesigns: {nodes: designs}}}, {title}) => {
       </div>
       <Designs designs={designs} className="work-background-change" />
     </section>
+    <Contact />
   </Layout>
 }
 

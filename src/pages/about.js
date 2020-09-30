@@ -7,6 +7,7 @@ import { graphql } from "gatsby"
 import Image from "gatsby-image"
 import Heading from '../components/heading'
 import Title from '../components/title'
+import Contact from '../components/contact'
 
 export const query = graphql`
   {
@@ -93,8 +94,8 @@ const About = ({data: {allStrapiAbout: {nodes: about}}}) => {
               </div>
           </div>
         </section>
-          
     </section>
+    <Contact />
   </Layout>
 }
 
