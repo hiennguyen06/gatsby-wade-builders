@@ -13,6 +13,11 @@
         grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
     }
 
+    @media only screen and (max-width: 375px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+
     .about-section-container {
         display: grid;
         grid-template-rows: min-content 1fr;
@@ -52,6 +57,14 @@
             grid-gap: 6rem;
             grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
             align-items: center;
+
+            @media only screen and (max-width: 450px) {
+                grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+            }
+
+            @media only screen and (max-width: 375px) {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
 
             .director {
                 color: #b3b3b3;

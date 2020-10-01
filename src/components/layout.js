@@ -20,7 +20,6 @@ const Layout = ({ children }) => {
     setOpensidebar(!openSidebar);
   }
 
-  console.log(openSidebar);
 
   return (
     <>

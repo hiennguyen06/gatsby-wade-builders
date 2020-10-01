@@ -9,23 +9,46 @@
     transition: all 0.3s linear;
     opacity: 0;
     pointer-events: none;
-    // transform: translateY(-100%);
 }
 
 .show-sidebar {
     opacity: 1;
     pointer-events: auto;
-    // transform: translateY(0);
 }
 
-.sidebar-links {
+
+.sidebar-container {
+     height: 75vh;
+     width: 75%;
+     margin: 0 auto;
+     padding: 0 6rem;
+     display: flex;
+     align-items: center;
+
+
+    .sidebar-links {
+        color: #fff;
+        font-size: 5.6rem;
+    }
+}
+
+.sidebar-nav {
+    width: 100%;
+    padding: 2.8rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.sidebar-social{
+    color: #fff;
+}
+
+.sidebar-logo {
     color: #fff;
 }
 
 .close-btn {
-    position: absolute;
-    right: 4.75%;
-    top: 2.75%;
     font-size: 2.5rem;
     background: transparent;
     border-color: transparent;

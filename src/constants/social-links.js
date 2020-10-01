@@ -19,9 +19,9 @@ const data = [
     }
 ]
 
-const SocialLinks = () => {
+const SocialLinks = ({socialClass}) => {
     return (
-        <ul className="social-links">
+        <ul className={`social-links ${socialClass ? socialClass : ''}`}>
             {data.map((item) => {
                 return (
                 <li key={item.id}>
