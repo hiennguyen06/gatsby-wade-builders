@@ -28,9 +28,8 @@ const Testimonial = () => {
     const data = useStaticQuery(query)
     const {allStrapiTestimonials: {nodes: testimonial}} = data
 
-    const {
-        file:{childImageSharp: { fluid },
-      }} = useStaticQuery(query) 
+    // const image = useStaticQuery(query) 
+    // const {file:{childImageSharp: { fluid }}} = image
 
 
     const [value, setValue] = useState(0)

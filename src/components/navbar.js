@@ -1,5 +1,5 @@
 import { doc } from 'prettier'
-import React, { useState } from 'react'
+import React, { useState, useEffect} from 'react'
 import { FaAlignRight } from "react-icons/fa"
 import NavLinks from '../constants/links'
 import { Link } from "gatsby"
@@ -16,7 +16,9 @@ const Navbar = ( {styleClass, handleToggle} ) => {
         }
     }
 
-    window.addEventListener('scroll', changeNavbar)
+    useEffect(() => {
+        window.addEventListener('scroll', changeNavbar)
+    }, [])
 
     return (
         <nav className={navbar ? 'navbar navbar-active' : 'navbar'}>

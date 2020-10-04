@@ -55,7 +55,6 @@ const About = ({data: {allStrapiAbout: {nodes: about}}}) => {
 
   const { header_text, description_1, description_2, description_3, main_image, image_2, image_3, image_4 } = about[0];
 
-  console.log(main_image)
   return <Layout>
     <section>
         <div className="section section-work-page">
