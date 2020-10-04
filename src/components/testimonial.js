@@ -3,7 +3,6 @@ import Title from '../components/title'
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 
-
 const query = graphql`
   {
     allStrapiTestimonials {
@@ -42,7 +41,9 @@ const Testimonial = () => {
             <div className="testimonial-section">
                 <div className="testimonial-section-center">
                     <h3>Clients we've worked with</h3>
-                    <div className="text testimonial-info">
+                    <div 
+                      className="text testimonial-info"
+                    >
                         "{info}"
                     </div>
                     <div className="testimonial-btn-container">
@@ -53,7 +54,7 @@ const Testimonial = () => {
                                         onClick={() => setValue(index)}
                                         className={`testimonial-btn ${index === value ? 'testimonial-btn-active' : ''} `}
                                         >
-                                            {item.name}
+                                          {item.name}
                                         <p className="testimonial-job-title">{item.title}</p>
                                     </button>
                                 </div>

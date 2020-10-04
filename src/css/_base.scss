@@ -83,7 +83,11 @@ a {
     @extend .text;
     text-transform: capitalize;
     color: #b3b3b3;
-    padding-right: 1.6rem;
+    border: 1px solid #b3b3b3;
+    padding: 4px 1rem;
+    border-radius: 4px;
+    margin-right: 1rem;
+    font-size: 1.2rem;
 }
 
 .logo {

@@ -1,17 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { graphql } from "gatsby"
 import Layout from '../components/layout'
-import ReactMarkdown from 'react-markdown'
+import Image from "gatsby-image"
+import Modal from '../components/modal'
+
 
 const WorkPages = ({data}) => {
-    const { content } = data.design
-    console.log(content)
+  const {title, home_image, suburb, state} = data.design
+
+  const [selectedImg, setSelectedImg] = useState(null)
+
 
     return <Layout>
-        <section>
-            <h1>Hello</h1>
-            <ReactMarkdown source={content}>
-            </ReactMarkdown>
+        <section className="section">
+          <div className="template-section"> 
+            <div className="template-title">
+              <h3>{title}</h3>
+              <p className="text">{suburb}, {state}</p>
+            </div>
+            <div className="template-image-container">
+              
+              {home_image.map((home) => {
+                return (
+                    <div key={home.id} className="image-div" onClick={() => setSelectedImg(home.home_image.childImageSharp.fluid) }>
+                      <Image fluid={home.home_image.childImageSharp.fluid} />
+                    </div>
+                )
+              })}
+            </div>
+          </div>
+
+        {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />}
         </section>
     </Layout>
 }
@@ -19,8 +38,19 @@ const WorkPages = ({data}) => {
 export const query = graphql`
   query GetSingleDesign($slug: String) {
     design: strapiDesigns(slug: { eq: $slug }) {
-      content
       title
+      suburb
+      state
+      home_image {
+        id
+        home_image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
     }
   }
 `

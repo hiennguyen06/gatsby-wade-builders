@@ -40,7 +40,16 @@ export const query = graphql`
             }
           }
         }
-        content
+        home_image {
+          id
+          home_image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
         type {
           id
           name
