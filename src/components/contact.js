@@ -10,7 +10,7 @@ const Contact = () => {
         <div className="section-contact">
             <div>
                 <h1 className="contact-heading">Looking to build your next<br></br>dream home with us?</h1>
-                <Link to="/about/" className="btn">Get in touch</Link>
+                <Link to="/contact/" className="btn">Get in touch</Link>
             </div>
         </div>
     </section>
